@@ -1,0 +1,73 @@
+/** Font for text is below, using google fonts for consistency, can be changed see read_me.txt for more info **/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    background-color: #ECF0F4;
+}
+
+* {
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 100px;
+}
+
+/** Navigation Styling Start **/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /**The background color for the navigation bar**/
+    background-color: #1E3672;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    /**The text color for the navigation bar**/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    /**The hover color for the navigation bar**/
+    background-color: #45D00D;
+    color: #ECECEC;
+}
+
+/** Navigation Styling End **/
+
+
+.about_me_box {
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    background: #ECECEC;
+    color: #32363F;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    padding: 3ch;
+    border-radius: 2ch;
+    border: 5px solid #1E232F;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

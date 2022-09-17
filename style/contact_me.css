@@ -1,0 +1,61 @@
+/** Font for text is below, using google fonts for consistency, can be changed see read_me.txt for more info **/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: black;
+}
+
+/** Navigation Styling Start **/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /**The background color for the navigation bar**/
+    background-color: #1E3672;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    /**The text color for the navigation bar**/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    /**The hover color for the navigation bar**/
+    background-color: #45D00D;
+    color: #ECECEC;
+}
+
+/** Navigation Styling End **/
+
+
+/** Boxes and containers for the applicatioj **/
+
+
+.contact_box {
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    background: #ECECEC;
+    color: #32363F;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    padding: 3ch;
+    border-radius: 2ch;
+    border: 5px solid #1E232F;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

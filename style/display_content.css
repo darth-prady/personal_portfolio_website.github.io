@@ -1,0 +1,100 @@
+/** Font for text is below, using google fonts for consistency, can be changed see read_me.txt for more info **/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: black;
+}
+
+/** Navigation Styling Start **/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /**The background color for the navigation bar**/
+    background-color: #1E3672;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    /**The text color for the navigation bar**/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    /**The hover color for the navigation bar**/
+    background-color: #45D00D;
+    color: #ECECEC;
+}
+
+/** Navigation Styling End **/
+
+
+.wave {
+    float: left;
+    margin: 20px;
+    animation: wave ease-in-out 0.5s infinite alternate;
+    transform-origin: center -36px;
+}
+
+.wave:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.wave img {
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 200px;
+    height: 250px;
+}
+
+.wave figcaption {
+    text-align: center;
+}
+
+.wave:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px;
+    left: 50%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(35deg);
+}
+
+.wave:before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
